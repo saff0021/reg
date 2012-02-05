@@ -1,0 +1,25 @@
+<%= form_for(@new_draft_pick) do |f| %>
+  <% if @new_draft_pick.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@new_draft_pick.errors.count, "error") %> prohibited this draft from being saved:</h2>
+
+      <ul>
+      <% @new_draft_pick.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :player_type %><br />
+    <%= f.text_field :player_type %>
+  </div>
+  <div class="field">
+    <%= f.label :player_num %><br />
+    <%= f.number_field :player_num %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  pos: MyString
+  tm: MyString
+  cost: 1
+  selected: false
+
+two:
+  name: MyString
+  pos: MyString
+  tm: MyString
+  cost: 1
+  selected: false

@@ -1,0 +1,31 @@
+<h1>Listing pitchers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Pos</th>
+    <th>Tm</th>
+    <th>Cost</th>
+    <th>Selected</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pitchers.each do |pitcher| %>
+  <tr>
+    <td><%= pitcher.name %></td>
+    <td><%= pitcher.pos %></td>
+    <td><%= pitcher.tm %></td>
+    <td><%= pitcher.cost %></td>
+    <td><%= pitcher.selected %></td>
+    <td><%= link_to 'Show', pitcher %></td>
+    <td><%= link_to 'Edit', edit_pitcher_path(pitcher) %></td>
+    <td><%= link_to 'Destroy', pitcher, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pitcher', new_pitcher_path %>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @pitcher.name %>
+</p>
+
+<p>
+  <b>Pos:</b>
+  <%= @pitcher.pos %>
+</p>
+
+<p>
+  <b>Tm:</b>
+  <%= @pitcher.tm %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @pitcher.cost %>
+</p>
+
+<p>
+  <b>Selected:</b>
+  <%= @pitcher.selected %>
+</p>
+
+
+<%= link_to 'Edit', edit_pitcher_path(@pitcher) %> |
+<%= link_to 'Back', pitchers_path %>

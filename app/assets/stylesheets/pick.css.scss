@@ -1,0 +1,40 @@
+// Place all the styles related to the Pick controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#columns {
+  background: #141;
+}
+
+#main {
+  margin-left: 13em;
+  padding-top: 4ex;
+  padding-left: 10%;
+  background: white;
+}
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 25%;
+  background: #141;
+  color: #bfb;
+}
+
+#undrafted_hitter_list .list_line_even {
+  background:   #e0f8f8;
+}
+
+#undrafted_hitter_list .list_line_odd {
+  background:   #f8b0f8;
+}
+
+#undrafted_pitcher_list .list_line_even {
+  background:   #e0f8f8;
+}
+
+#undrafted_pitcher_list .list_line_odd {
+  background:   #f8b0f8;
+}

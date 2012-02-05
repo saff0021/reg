@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Player type:</b>
+  <%= @draft.player_type %>
+</p>
+
+<p>
+  <b>Player num:</b>
+  <%= @draft.player_num %>
+</p>
+
+
+<%= link_to 'Edit', edit_draft_path(@draft) %> |
+<%= link_to 'Back', drafts_path %>

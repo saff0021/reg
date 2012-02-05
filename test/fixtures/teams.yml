@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  team_name: MyString
+  spent: 1
+  num_players: 1
+  image: MyString
+
+two:
+  team_name: MyString
+  spent: 1
+  num_players: 1
+  image: MyString

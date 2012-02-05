@@ -1,0 +1,25 @@
+      <div id="undrafted_pitcher_list">
+        <table>
+        <% @pitchers_undrafted.each do |pitcher| %>
+          <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+
+            <td>
+              <dt><%= pitcher.name %></dt>
+            </td>
+
+            <td>
+              <dt>$<%= pitcher.cost %></dt>
+            </td>
+
+            <td>
+              <dt><%= pitcher.pos %></dt>
+            </td>
+
+            <td>
+              <dt><%= pitcher.tm %></dt>
+            </td>
+          </tr>
+        <% end %>
+        </table>
+      </div>
+

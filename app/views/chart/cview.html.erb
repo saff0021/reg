@@ -1,0 +1,23 @@
+<html>
+<body>
+  <div id="banner">
+    <%= image_tag("regis.jpg") %>
+    <p>View Depth Charts  <%= link_to "Run Draft", pick_pview_path %></p>
+  </div>
+
+  <div id="columns">
+    <div id="side">
+      <%@teams.each do |team|%>
+        <tr>
+          <td>
+            <dt><%= image_tag team.image %> <%= team.team_name %> </dt>
+          </td>
+        </tr>
+      <% end %>
+    </div>
+  </div>
+
+<h1>View Depth Charts Home Page</h1>
+</body>
+</html>
+

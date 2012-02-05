@@ -1,0 +1,42 @@
+<html>
+<body>
+
+  <div id="banner">
+    <%= image_tag "regis.jpg" %>
+    <p><%= link_to "View Depth Charts", chart_cview_path %>  Run Draft</p>
+  </div>
+
+  <div id="columns">
+    <div id="side">
+      <%@teams.sort_by{|i| i.spent}.each do |team|%>
+        <tr>
+          <td>
+            <dt><%= team.team_name %> $<%= team.spent %> <%= team.num_players %></dt>
+          </td>
+        </tr>
+      <% end %>
+
+      <%team = @teams.min_by{|i| i.spent}%>
+
+
+      <h3>Next Pick</h3>
+      <%= render 'drafts/form' %>
+    </div>
+
+    <div id="main">
+      <h1>Draft Home Page</h1>
+
+      <p>@drafts[3].player_num = <%= @drafts[3].player_num %></p>
+      <p>@drafts[6].team_id = <%= @drafts[6].team_id %></p>
+
+      <h3>Undrafted Pitchers</h3>
+      <%= render 'pitchers/undrafted' %>
+
+      <h3>Undrafted Hitters</h3>
+      <%= render 'hitters/undrafted' %>
+
+    </div>
+  </div>
+</body>
+</html>
+

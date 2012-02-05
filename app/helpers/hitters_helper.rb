@@ -1,0 +1,2 @@
+module HittersHelper
+end
